@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}"
+	name="${project.name}" plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}"
+			url="${project.organization.url}" />
+		<param name="plugin-icon">images/pluginIcon.png</param>
+		<param name="plugin-logo">images/pluginLogo.png</param>
+		<param name="js">js/PrimasAPIClient.js</param>
+	</plugin-info>
+	<!-- add our i18n resource -->
+	<resource type="i18n" name="i18n" location="PrimasAPIClient" />
+
+
+	<!-- add our web resources -->
+	<web-resource key="PrimasAPIClient-resources"
+		name="PrimasAPIClient Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<resource type="download" name="PrimasAPIClient.css"
+			location="/css/PrimasAPIClient.css" />
+		<resource type="download" name="PrimasAPIClient.js"
+			location="/js/PrimasAPIClient.js" />
+		<resource type="download" name="BICClientConfig.xml"
+			location="/config/BICClientConfig.xml" />
+		<resource type="download" name="images/" location="/images" />
+		<context>atl.general</context>
+		<context>atl.admin</context>
+		<context>PrimasAPIClient</context>
+	</web-resource>
+	<rest name="Primas" i18n-name-key="primas.name" key="primas"
+		path="/primas" version="1.0">
+		<description key="primas.description">The Primas Plugin</description>
+	</rest>
+</atlassian-plugin>

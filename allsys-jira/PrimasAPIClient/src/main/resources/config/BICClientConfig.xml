@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<Project key-allsystem="BIC" key-client="BIC" />
+	<Workflow>
+		<Transition id-rollback="71" id-resolved-allsystem="81"></Transition>
+		<Transition id-rollback="81" id-resolved-allsystem="91"></Transition>
+	</Workflow>
+
+	<applicationlink-allsystem
+		id-allsystem="5fdce829-6a55-3c69-914b-8fc7e2585291"
+		id-client="6eae8da3-2b64-3999-9e68-f437c823535c" />
+	<account-accepted username-client="admin"
+		username-allsystem="admin" />
+	<IssueTypes>
+		<IssueType id-allsystem="10003" id-client="10004"
+			name="Change" />
+		<IssueType id-allsystem="10105" id-client="10400"
+			name="Complaint" />
+		<IssueType id-allsystem="10101" id-client="10401"
+			name="Enquiry" />
+		<IssueType id-allsystem="10000" id-client="10001"
+			name="Incident" />
+		<IssueType id-allsystem="10102" id-client="10402"
+			name="Installtion" />
+		<IssueType id-allsystem="10103" id-client="10403"
+			name="Ordering" />
+		<IssueType id-allsystem="10100" id-client="10404"
+			name="Request" />
+	</IssueTypes>
+	<fields>
+		<field id-allsystem="10223" id-client="10605" name="Branch"
+			insight="True" />
+		<field id-allsystem="10226" id-client="10613" name="Customer"
+			insight="True" />
+		<field id-allsystem="10404" id-client="10606" name="Equipment"
+			insight="True" />
+		<field id-allsystem="10405" id-client="10604" name="Case Type"
+			insight="True" />
+		<field id-allsystem="10209" id-client="10600" name="Channel" />
+		<field id-allsystem="10208" id-client="10208" name="Symptom" />
+		<field id-allsystem="10403" id-client="10614"
+			name="Symptom Type" />
+		<field id-allsystem="summary" id-client="summary" name="summary" />
+		<field id-allsystem="description" id-client="description"
+			name="description" />
+	</fields>
+	<insight>
+		<ObjectSchema id-allsystem="3" id-client="2" name="">
+			<ObjectType name="Requester" id-allsystem="7"
+				id-client="6">
+				<Attribute name="Requester Firstname" id-allsystem="44"
+					id-client="70" iql="true"/>
+				<Attribute name="Requester Lastname" id-allsystem="47"
+					id-client="71" iql="true"/>
+				<Attribute name="Requester (Employee ID)"
+					id-allsystem="48" id-client="72" iql="true"/>
+				<Attribute name="Requester Position" id-allsystem="49"
+					id-client="73" iql="true"/>
+				<Attribute name="Requester Unit" id-allsystem="50"
+					id-client="74" iql="true"/>
+				<Attribute name="Requester Email" id-allsystem="51"
+					id-client="75" iql="true"/>
+				<Attribute name="Phone Number" id-allsystem="63"
+					id-client="76" iql="true"/>
+			</ObjectType>
+			<ObjectType name="Branch" id-allsystem="13" id-client="7">
+				<Attribute name="Branch ID" id-allsystem="86"
+					id-client="77" iql="true"/>
+				<Attribute name="Branch Name" id-allsystem="89"
+					id-client="78" iql="true"/>
+				<Attribute name="Branch Type" id-allsystem="90"
+					id-client="79" iql="true"/>
+				<Attribute name="Branch Manager" id-allsystem="91"
+					id-client="80" iql="true"/>
+				<Attribute name="Branch Area" id-allsystem="100"
+					id-client="81" iql="true"/>
+				<Attribute name="Branch Phone No" id-allsystem="101"
+					id-client="82" iql="true"/>
+				<Attribute name="Branch Email" id-allsystem="102"
+					id-client="83" iql="true"/>
+				<Attribute name="Branch Address" id-allsystem="103"
+					id-client="84" iql="true"/>
+				<Attribute name="Branch Location" id-allsystem="104"
+					id-client="85" iql="true"/>
+			</ObjectType>
+			<ObjectType name="CaseType" id-allsystem="21"
+				id-client="8">
+				<Attribute name="Name" id-allsystem="134" id-client="59" iql="true"/>
+			</ObjectType>
+			<ObjectType name="Category-Equipment" id-allsystem="20"
+				id-client="9">
+				<Attribute name="Name" id-allsystem="130" id-client="63" iql="true"/>
+				<Attribute name="Case Type" id-allsystem="154"
+					id-client="87" iql="true"/>
+			</ObjectType>
+			<ObjectType name="Equipment" id-allsystem="10"
+				id-client="22">
+				<Attribute name="Equipment SN" id-allsystem="139"
+					id-client="88" iql="true"/>
+				<Attribute name="Equipment Name" id-allsystem="140"
+					id-client="89" iql="true"/>
+				<Attribute name="Warranty Start Day" id-allsystem="143"
+					id-client="90" iql="true"/>
+				<Attribute name="Equipment InHouse" id-allsystem="144"
+					id-client="91" iql="true"/>
+				<Attribute name="Equipment Install Date"
+					id-allsystem="145" id-client="92" iql="true"/>
+				<Attribute name="Equipment Remark" id-allsystem="147"
+					id-client="94" iql="true"/>
+				<Attribute name="Branch" id-allsystem="148"
+					id-client="95" iql="true"/>
+				<Attribute name="Equipment Type" id-allsystem="153"
+					id-client="96" iql="true"/>
+				<Attribute name="Equipment Catetory" id-allsystem="150"
+					id-client="97" iql="true"/>
+				<Attribute name="Available" id-allsystem="149"
+					id-client="98" iql="true"/>
+					<Attribute name="Warranty End Day" id-allsystem="161"
+					id-client="99" iql="true"/>
+			</ObjectType>
+		</ObjectSchema>
+
+	</insight>
+</configuration>

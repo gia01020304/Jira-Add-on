@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<applicationlink-allsystem
+		id-allsystem=""
+		id-client="6eae8da3-2b64-3999-9e68-f437c823535c"></applicationlink-allsystem>
+	<status-refuse id-client="101"></status-refuse>
+	<IssueTypes>
+		<IssueType id-allsystem="10007" id-client="10300"
+			name="TTT1" />
+		<IssueType id-allsystem="10008" id-client="10301"
+			name="TTT2" />
+	</IssueTypes>
+	<fields>
+		<field id-allsystem="summary" id-client="summary" name="summary" />
+		<field id-allsystem="description" id-client="description"
+			name="description" />
+	</fields>
+	<insight>
+		<ObjectSchema id-allsystem="3" id-client="3" name="">
+			<ObjectType name="Requester" id-allsystem="7"
+				id-client="7">
+				<Attribute name="Requester Firstname" id-allsystem="44"
+					id-client="44"></Attribute>
+				<Attribute name="Requester Lastname" id-allsystem="47"
+					id-client="47"></Attribute>
+				<Attribute name="Requester (Employee ID)"
+					id-allsystem="48" id-client="48"></Attribute>
+				<Attribute name="Requester Position" id-allsystem="49"
+					id-client="49"></Attribute>
+				<Attribute name="Requester Unit" id-allsystem="50"
+					id-client="50"></Attribute>
+				<Attribute name="Requester Email" id-allsystem="51"
+					id-client="51"></Attribute>
+				<Attribute name="Phone Number" id-allsystem="63"
+					id-client="63"></Attribute>
+			</ObjectType>
+			<ObjectType name="Branch" id-allsystem="13" id-client="13">
+				<Attribute name="Branch ID" id-allsystem="86"
+					id-client="86"></Attribute>
+				<Attribute name="Branch Name" id-allsystem="89"
+					id-client="89"></Attribute>
+				<Attribute name="Branch Type" id-allsystem="90"
+					id-client="90"></Attribute>
+				<Attribute name="Branch Manager" id-allsystem="91"
+					id-client="91"></Attribute>
+				<Attribute name="Branch Area" id-allsystem="100"
+					id-client="100"></Attribute>
+				<Attribute name="Branch Phone No" id-allsystem="101"
+					id-client="101"></Attribute>
+				<Attribute name="Branch Email" id-allsystem="102"
+					id-client="102"></Attribute>
+				<Attribute name="Branch Address" id-allsystem="103"
+					id-client="103"></Attribute>
+				<Attribute name="Branch Location" id-allsystem="104"
+					id-client="104"></Attribute>
+			</ObjectType>
+			<ObjectType name="CaseType" id-allsystem="21"
+				id-client="21">
+				<Attribute name="Name" id-allsystem="134" id-client="134"></Attribute>
+			</ObjectType>
+			<ObjectType name="Category-Equipment" id-allsystem="20"
+				id-client="20">
+				<Attribute name="Name" id-allsystem="130" id-client="130"></Attribute>
+				<Attribute name="Case Type" id-allsystem="154"
+					id-client="154"></Attribute>
+			</ObjectType>
+			<ObjectType name="Equipment" id-allsystem="22"
+				id-client="22">
+				<Attribute name="Equipment SN" id-allsystem="139"
+					id-client="139"></Attribute>
+				<Attribute name="Equipment Name" id-allsystem="140"
+					id-client="140"></Attribute>
+				<Attribute name="Equipment Warranty" id-allsystem="143"
+					id-client="143"></Attribute>
+				<Attribute name="Equipment InHouse" id-allsystem="144"
+					id-client="144"></Attribute>
+				<Attribute name="Equipment Install Date"
+					id-allsystem="145" id-client="145"></Attribute>
+				<Attribute name="Equipment Be" id-allsystem="146"
+					id-client="146"></Attribute>
+				<Attribute name="Equipment Remark" id-allsystem="147"
+					id-client="147"></Attribute>
+				<Attribute name="Branch" id-allsystem="148"
+					id-client="148"></Attribute>
+				<Attribute name="Equipment Type" id-allsystem="153"
+					id-client="153"></Attribute>
+				<Attribute name="Equipment Catetory" id-allsystem="150"
+					id-client="150"></Attribute>
+				<Attribute name="Available" id-allsystem="149"
+					id-client="149"></Attribute>
+			</ObjectType>
+		</ObjectSchema>
+
+	</insight>
+</configuration>
